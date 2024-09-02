@@ -73,7 +73,9 @@ aside div a{
     color: blue;
     font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
+    position: fixed;
+    right: 4rem;
+    top: 196px;
 }
 section{
     position: fixed;
@@ -209,7 +211,6 @@ footer{
     position:fixed;
     bottom:4px;
     text-align:center;
-    
 }
 .footerr{
     padding-bottom: 6px;
@@ -232,6 +233,7 @@ footer{
     border-bottom: 1px solid rgb(201, 200, 200);
     background-color: #889bb4c3;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     gap: 4px;
 }
@@ -261,4 +263,12 @@ ul{
     top: 1rem;
     right: 1rem;
 	list-style: none;
+}
+#fileInput{
+    opacity: 0.05; 
+    cursor: pointer;
+    position: fixed;
+    right: 4rem;
+    top: 187px;
+    z-index: 2;
 }

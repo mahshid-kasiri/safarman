@@ -1,5 +1,5 @@
 window.onload = function() {
-    scrollToDiv(document.getElementById("myDiv"), 1500);
+    scrollToDiv(document.getElementById("myDiv"), 2400);
 };
 
 function scrollToDiv(element, duration) {

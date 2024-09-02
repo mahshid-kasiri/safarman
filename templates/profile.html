@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.png')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile_style.css')}}">
+    <link rel="stylesheet" href="../static/css/profile_style.css">
 </head>
 <body>
     <img class="beauty-boy-left" src="{{ url_for('static', filename='images/prof_illas_prev_ui.png')}}" alt="">
@@ -37,7 +37,7 @@
                     <div class="create">
                         <form id="uploadPhoto">
                             <span class="icon create-icon"><img src="https://icongr.am/feather/share.svg?size=30&color=301adb" alt=""></span>
-                             <input type="file" id="fileInput" name="fileInput" style="display: none;">
+                             <input type="file" id="fileInput" name="fileInput" style="" accept="image/*">
                              <button type="submit" id="uploadButton">شهر جدید</button>
                         </form>
                     </div>
@@ -69,7 +69,7 @@
         <div class="copy-right"><span>حق سایت محفوظ است</span><span>2024</span><span>©</span></div>
     </footer>
 
-    <script src="{{ url_for('static', filename='js/uploadPhoto.js')}}"></script>
+    <script src="../static/js/uploadPhoto.js"></script>
 </body>
 </html>
 
