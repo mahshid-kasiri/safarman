@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>city</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comment_style.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png')}}">
+    <script src="{{ url_for('static', filename='js/app.js')}}"></script>
+</head>
+
+<body>
+    <aside class="post-photo-container">
+        <div class="post-photo-place">
+            <img id="post-photo" src="{{ url_for('static', filename='images/LosAngeles.jpg')}}" alt="no img found">
+        </div>
+        <div class="anime">
+            <img src="{{ url_for('static', filename='images/comment_anime_prev_ui.png')}}" alt="">
+        </div>
+    </aside>
+    
+    <section class="container">
+            <form action="#"> <!--mahal namayesh post has , nemidoonam b dard mikhore tag form bezarim ya na vali gozashtam-->
+                <div id="postContainer" class="comments-vise">
+                    <ul id="commentsList">
+                    </ul>
+                </div>
+            </form>
+
+            <form action="#"> <!--send comment-->
+                <div class="message">
+                    <textarea id="commentInput" name="commentText" placeholder="متن پیام را وارد کنید" required></textarea>
+                    <button id="commentSend" type="submit">
+                        <image src="https://icongr.am/fontawesome/commenting.svg?size=27&color=3a0ca7" mode="">
+                    </button>
+                </div>
+            </form>
+
+    </section>
+
+    <script src="{{ url_for('static', filename='js/commentScript.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "EXO";
+    src: url("../fonts/B\ Zar\ Bold_0.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EXO";
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+aside{
+    position: static;
+    top: 1px;
+    padding-right: 10px;
+    padding-left: 1px;
+    border-left: 1px solid rgb(11, 41, 125);
+    border-right-style: double;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    border-top-left-radius: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#post-photo{
+    width: 100%;
+    height: 31rem;
+    position: relative;
+    top: -6px;
+    left: 5px;
+    padding: 9px;
+    border: 8px solid #3d2c77;
+    border-radius: 64px 0px 0px 1px;
+    box-shadow: inset 2px 2px 8px #6439a3;
+}
+.anime img{
+    width: 36rem;
+    height: 21rem;
+    margin: -1rem;
+    position: relative;
+    bottom: 16px;
+    left: 5px;
+}
+.anime{
+    border-bottom: 4px solid #3d2c77;
+    border-radius: 169px;
+}
+svg{
+    padding-left: 1.5%;
+    position: absolute;
+    bottom: 0;
+}
+#commentSend{
+    width: 3rem;
+    border: 1px solid rgb(12, 12, 105);
+    border-radius: 5px;
+    background: none;
+}
+#commentSend:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+}
+.container{
+    width: 80%;
+    height: 99vh;
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.comments-vise{
+    scroll-behavior: auto;
+    border: 1px solid black;
+    width: 100%;
+    height: 93vh;
+    padding: 0.5%;
+    margin-bottom: 0.5%;
+}
+.message{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 3px;
+    width: 100% ;
+}
+textarea{
+    text-align: right;
+    padding-right: 7px;
+    align-content: center;
+    width: 100%;
+    height: 2.08rem;
+}
+form{
+    width: 100%;
+    height: 100%;
+}

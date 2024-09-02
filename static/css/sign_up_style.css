@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@font-face {
+    font-family: "EXO";
+    src: url("../fonts/B\ Zar\ Bold_0.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EXO";
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../images/church.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bor{
+    padding: 9px;
+    border-radius: 30px;
+    border-top: 3.5px solid orange;
+    border-top-left-radius: 23%;
+    border-right: 7px solid orange;
+    border-bottom-right-radius: 24% ;
+}
+section {
+    position: relative;
+    width: 480px;
+    background-color: transparent;
+    border: 4px solid rgba(31, 12, 102, 0.925);
+    border-radius: 24% 4%;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #0d0e6c;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.inputbox {
+    position: relative;
+    margin: 21px 0;
+    width: 21.5rem;
+    border-bottom: 4px solid #0b177e;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0 14px;
+    
+}
+label {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-40%);
+    color: #e4a215;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in;
+
+}
+input:focus ~ label, 
+input:valid ~ label {
+    top: -1rem;
+    right: 0rem;
+    transform: scale(0.7);
+}
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 0px 0 5px;
+    color: #bdc3f0;
+    text-align: right;
+    direction: ltr;
+    letter-spacing: 1px;
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px 10px;
+    background-color: rgb(246, 174, 19);
+    border: 2px solid #0d0e6c;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin-top: 2rem;
+}
+button:hover {
+  border: 4px solid rgb(246, 126, 7);
+  background-color: #fff;
+}
+.home-icon{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 83px;
+    height: 76px;
+}
+img .u{
+    position: absolute;
+    left: 8px;
+    color: #f6ae13;
+    font-size: 1.2rem;
+    top: 20px;
+    direction: ltr;
+}
+.agree{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.agree input{
+    border: 1px solid blue;
+    margin-right: -5rem;
+    
+}
+.agree input:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
+    color: #bdc3f0;
+}
+.have-account{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 5px;
+}
+
+

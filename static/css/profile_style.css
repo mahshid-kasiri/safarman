@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "EXO";
+    src: url(../fonts/B\ Zar\ Bold_0.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EXO";
+}
+body{
+    background-image: url("../images/prof_back.jpg");
+}
+#logOutBtn{
+    transition: 0.5s;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #a6acb9;
+    cursor: pointer;
+}
+#logOutBtn:hover{
+    background-color: white;
+    box-shadow: 0px 0px 20px blue;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 1rem;
+    top: 0;
+}
+.safar{
+    font-family: sans-serif;
+    font-size: xxx-large;
+    margin-left: 1rem;
+}
+aside div{
+    background-color: rgba(220, 187, 144, 0.609);
+    margin-top: 15px;
+    box-shadow: 3px 3px 4px rgb(203, 200, 200);
+    display: flex;
+    border-radius: 15px;
+    flex-direction: reverse;
+    align-items: center;
+    padding-right: 10px;
+    gap: 6px;
+    width: 12rem;
+    height: 3.5rem;
+}
+aside div:hover{
+    background-color: #666bd450;
+}
+.home-link a{
+    color: rgb(17, 17, 211);
+}
+aside div a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+#uploadPhoto{
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+}
+#uploadButton{
+    color: blue;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+section{
+    position: fixed;
+    top: 3rem;
+    left: 12%;
+    width: 70%;
+    height: 87%;
+    background-color: #aec7bf66;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 20px #353595;
+}
+section .user-info{
+    height: 40%;
+    border-bottom: 1px solid rgb(209, 201, 201);
+}
+section .user-info .profile-image{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+section .user-info .profile-image img{
+    width: 100%;
+    height: 100%;
+}
+section .user-info .user-name{
+    color: #082256;
+    border: 2px solid rgb(42, 42, 113);
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    width: 40%;
+    height: 8%;
+    border-radius: 1.1rem;
+    box-shadow: inset 0px 0px 18px 0px rgb(106, 106, 197);
+}
+section .user-info .user-name span{
+    font-family: "EXO";
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+}
+section .user-info .user-bio{
+    position: absolute;
+    top: 16%;
+    right: 11%;
+    font-family: "EXO";
+    font-size: 1rem;
+    color: #060655;
+    border: 2px solid rgb(74, 68, 154);
+    box-shadow: inset 0px 0px 14px 0px rgb(94, 94, 174);
+    width: 49%;
+    height: 20%;
+    border-radius: 19px;
+    padding: 1rem;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+}
+.user-posts-line .number-of-posts{
+    font-family: "EXO";
+    width: 100%;
+    height: 30px;
+    background-color: rgba(250, 223, 201, 0.398);
+    text-align: center;
+    line-height: 1.5rem;
+    border-bottom: 1px solid rgb(209, 201, 201);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #353595;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+section .posts{
+    padding: 11px 15px;
+    width: 100%;
+    height: 26rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+.post-card{
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.post-card a{
+    width: 32%;
+}
+section .posts img{
+    width: 100%;
+    height: 25.5rem;
+    border-radius: 0.9rem;
+    border: 1px solid #060655;
+    transition: ease-in;
+    transition-duration: 0.5s;
+}
+section .posts .press{
+    z-index: 2;
+}
+section .posts img:hover{
+    transition-delay: 0.5s;
+    transform: scale(1.02);
+    border-radius: 4-0px;
+    box-shadow:2px 2px 20px #060655;
+}
+.beauty-boy-left{
+    width: 35%;
+    height: 70%;
+    z-index: 0;
+    position: absolute;
+    bottom: -119px;
+    left: -9rem;
+}
+.beauty-boy-right{
+    width: 29%;
+    height: 80%;
+    z-index: 1;
+    position: absolute;
+    bottom: -191px;
+    right: 0;
+}
+footer{
+    display: block;
+    width:100%;
+    position:fixed;
+    bottom:4px;
+    text-align:center;
+    
+}
+.footerr{
+    padding-bottom: 6px;
+}
+.footerr a{
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+    padding: 4rem;
+}
+.footerr a:hover{
+    color: #fff;
+    font-size: x-large;
+    transition: 0.5s;
+}
+.copy-right{
+    font-size: small;
+    color: rgb(249, 252, 254);
+    border-top: 1px solid rgb(201, 200, 200);
+    border-bottom: 1px solid rgb(201, 200, 200);
+    background-color: #889bb4c3;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+button{
+    background: center;
+    border: none;
+    border-radius: 20px;
+}
+#searchButton{
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    justify-content: flex-end;
+    gap: 6px;
+    flex-direction: row-reverse;
+}
+#searchButton p{
+    font-size: 16px;
+    color: blue;
+    cursor: pointer;
+}
+#searchCity{
+    text-align: right;
+}
+ul{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+	list-style: none;
+}
