@@ -57,25 +57,23 @@ h1 {
     flex-direction: row-reverse;
     align-items: center;
     border-radius: 30px;
-    padding: 0 14px;
-    
+    padding: 0 14px;   
 }
 label {
     position: absolute;
     top: 50%;
-    right: 3rem;
+    right: 1.5rem;
     transform: translateY(-40%);
-    color: #e4a215;
+    color: #0c0e86;
     font-size: 1.2rem;
     pointer-events: none;
     transition: all 0.5s ease-in;
-
 }
 input:focus ~ label, 
 input:valid ~ label {
     top: -1rem;
     right: 0rem;
-    transform: scale(0.7);
+    transform: scale(0.9);
 }
 .inputbox input {
     width: 100%;
@@ -85,10 +83,25 @@ input:valid ~ label {
     outline: none;
     font-size: 1rem;
     padding: 0 0px 0 5px;
-    color: #bdc3f0;
+    color: #0b134c;
     text-align: right;
     direction: ltr;
     letter-spacing: 1px;
+
+    /* غیرفعال کردن رنگ پس‌زمینه سفید برای فیلدهای پر شده خودکار */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: black !important;
+}
 }
 button {
     width: 100%;
@@ -121,6 +134,13 @@ img .u{
     top: 20px;
     direction: ltr;
 }
+#errormessage{
+    display: block;
+    position: relative;
+    top: -18px;
+    right: 15px;
+    color: blanchedalmond;
+}
 .agree{
     display: flex;
     justify-content: space-around;
@@ -135,7 +155,6 @@ img .u{
     cursor: pointer;
     transform: scale(1.2);
 }
-
 a{
     text-decoration: none;
     color: #bdc3f0;

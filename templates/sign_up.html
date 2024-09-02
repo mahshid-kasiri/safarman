@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>sign_up</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/sign_up_style.css')}}">
+  <link rel="stylesheet" href="../static/css/sign_up_style.css">
   <link rel="icon" href="{{ url_for('static', filename='images/favicon.png')}}">
   <title>Sign UP</title>
 </head>
@@ -38,6 +38,7 @@
                     <input type="password" id="confirmPassword" name="confirmPassword" oninput="checkPasswords()" required>
                     <label for="">رمز عبور را مجدد وارد کنید</label>
                 </div>
+                <p id="errormessage" style="display: none;">رمز عبور و تکرار رمز عبور یکسان نیستند .</p>
                 <div class="agree">
                     <span><a href="#" download="file.txt">قوانین</a> سایت را مطالعه کرده و میپذیرم</span>
                     <input type="checkbox" required>
@@ -53,6 +54,6 @@
         </a>
     </div>
 
-    <script src="{{ url_for('static', filename='js/signupScript.js')}}"></script>
+    <script src="../static/js/signupScript.js"></script>
 </body>
 </html>

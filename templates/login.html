@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/login_style.css')}}">
+  <link rel="stylesheet" href="../static/css/login_style.css">
   <link rel="icon" href="../images/favicon.png">
 </head>
 
@@ -15,7 +15,7 @@
     </div>
     <div class="bor">
         <section>
-            <form id="loginForm">
+            <form id="loginForm" action="#" method="post">
                 <h1>
                     <img class="logo-img" src="{{ url_for('static', filename='images/favicon.png')}}" alt="">
                     <p class="loginn">ورود به حساب کاربری</p>

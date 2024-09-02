@@ -73,7 +73,7 @@ h1 {
     top: 50%;
     right: 1rem;
     transform: translateY(-50%);
-    color: orange;
+    color: #0c0e86;
     font-size: 1.2rem;
     pointer-events: none;
     transition: all 0.5s ease-in-out;
@@ -92,7 +92,7 @@ input:valid ~ label {
     outline: none;
     font-size: 1rem;
     padding: 0 35px 0 5px;
-    color: #bae5f9;
+    color: #0c0e86;
     text-align: right;
 }
 .forget {

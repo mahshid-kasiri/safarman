@@ -14,3 +14,13 @@ function checkPasswords() {
 
 
 
+document.getElementById('confirmPassword').addEventListener('input', function() {
+    const password = document.getElementById('registerPassword').value;
+    const confirmPassword = this.value;
+    const errorMessage = document.getElementById('errormessage');
+    if (password !== confirmPassword) {
+        errorMessage.style.display = 'block';
+    } else {
+        errorMessage.style.display = 'none';
+    }
+});
