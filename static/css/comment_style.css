@@ -41,9 +41,9 @@ aside{
     box-shadow: inset 2px 2px 8px #6439a3;
 }
 .anime img{
-    width: 36rem;
+    width: 100%;
     height: 21rem;
-    margin: -1rem;
+    margin: 0rem;
     position: relative;
     bottom: 16px;
     left: 5px;
@@ -59,6 +59,7 @@ svg{
 }
 #commentSend{
     width: 3rem;
+    height: 2rem;
     border: 1px solid rgb(12, 12, 105);
     border-radius: 5px;
     background: none;
@@ -83,6 +84,7 @@ svg{
     height: 93vh;
     padding: 0.5%;
     margin-bottom: 0.5%;
+    background-color: azure;
 }
 .message{
     display: flex;
@@ -101,5 +103,55 @@ textarea{
 }
 form{
     width: 100%;
-    height: 100%;
+    height: 2rem;
+}
+.firstSend{
+    border: 1px solid black;
+    padding-inline: 11px;
+    border-radius: 6px;
+    background-color: #afdfe7;
+    padding-block: 8px ;
+}
+.sendReply{
+    padding-inline: 4px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 3px;
+}
+#sendSubmitButton{
+    padding-inline: 2px;
+}
+#replySendIcon{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-left: 1rem;
+   
+}
+.replymessageText{
+    border: 1px solid black;
+    max-width: 59rem;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 7px;
+    background-color: #eb9a0691;
+}
+.area{
+    display: flex;
+    justify-content: space-between;
+
+}
+.username{
+    background: none;
+    border: none;
+    border-left: 1px solid black;
+    margin-inline-end: 6px;
+    pointer-events: none;
+}
+.time{
+    background: none;
+    border: none;
+    margin-inline-end: 6px;
+    pointer-events: none;
 }
