@@ -10,35 +10,15 @@
 </head>
 
 <body>
-    <aside class="post-photo-container">
-        <div class="post-photo-place">
-            <img id="post-photo" src="{{ url_for('static', filename='images/LosAngeles.jpg')}}" alt="no img found">
-        </div>
-        <div class="anime">
-            <img src="{{ url_for('static', filename='images/comment_anime_prev_ui.png')}}" alt="">
-        </div>
-    </aside>
-    
-    <section class="container">
-            <form action="#"> <!--mahal namayesh post has , nemidoonam b dard mikhore tag form bezarim ya na vali gozashtam-->
-                <div id="postContainer" class="comments-vise">
-                    <ul id="commentsList">
-                    </ul>
-                </div>
-            </form>
-
-            <form action="#"> <!--send comment-->
-                <div class="message">
-                    <textarea id="commentInput" name="commentText" placeholder="متن پیام را وارد کنید" required></textarea>
-                    <button id="commentSend" type="submit">
-                        <image src="https://icongr.am/fontawesome/commenting.svg?size=27&color=3a0ca7" mode="">
-                    </button>
-                </div>
-            </form>
-
-    </section>
-
-    <script src="{{ url_for('static', filename='js/commentScript.js')}}"></script>
+    <form class="form" action="/post/{{ post._id }}" method="POST">
+        <label class="form-label" for="commentText"></label>
+        <input class="form-control" type="text" name="commentText">
+        <input class="btn btn-primary" type="submit">
+        {% for comment in comments %}
+            <p class="bold">{{ comment.user_id }}</p><br>
+            <p>{{ comment.content }}</p>
+        {% endfor %}
+    </form>
 </body>
 
 </html>

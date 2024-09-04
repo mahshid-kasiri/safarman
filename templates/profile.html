@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.png')}}">
-    <link rel="stylesheet" href="../static/css/profile_style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile_style.css')}}">
 </head>
 <body>
     <img class="beauty-boy-left" src="{{ url_for('static', filename='images/prof_illas_prev_ui.png')}}" alt="">
@@ -35,10 +35,16 @@
                 </li>
                 <li class="nav-list-item">
                     <div class="create">
-                        <form id="uploadPhoto">
-                            <span class="icon create-icon"><img src="https://icongr.am/feather/share.svg?size=30&color=301adb" alt=""></span>
-                             <input type="file" id="fileInput" name="fileInput" style="" accept="image/*">
-                             <button type="submit" id="uploadButton">شهر جدید</button>
+                        
+                        <form action="/profile" method="POST" enctype="multipart/form-data">
+                            <!-- <span class="icon create-icon"><img src="https://icongr.am/feather/share.svg?size=30&color=301adb" alt=""></span>
+                            <input type="file" id="fileInput" name="fileInput">
+                            <button type="submit" id="uploadButton">شهر جدید</button> -->
+                            {{ form.hidden_tag() }}
+                            {{ form.pic.label(class="form-label") }}
+                            {{ form.pic(class="form-control") }}
+                            <br>
+                            {{ form.submit(class="btn btn-primary") }}
                         </form>
                     </div>
                 </li>
@@ -57,6 +63,11 @@
             <div class="post-card" id="post">
                 <a href="../templates/comment.html"><img src="{{ url_for('static', filename='images/LosAngeles.jpg')}}" alt=""></a>
             </div>
+            {% for post in posts %}
+            <div class="post-card" id="post">
+                <a href="/post/{{ post._id }}"><img src="{{ post.pic }}" alt=""></a>
+            </div>
+            {% endfor %}
         </div>
     </section>
     <footer>
@@ -69,8 +80,6 @@
         <div class="copy-right"><span>حق سایت محفوظ است</span><span>2024</span><span>©</span></div>
     </footer>
 
-    <script src="../static/js/uploadPhoto.js"></script>
+    <script src="{{ url_for('static', filename='js/uploadPhoto.js')}}"></script>
 </body>
 </html>
-
-
